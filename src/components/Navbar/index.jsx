@@ -1,15 +1,27 @@
-import React from "react";
-import Nav from "react-bootstrap/Nav";
-
+import Link from "../Link";
+import logo from "../../images/rsva-logo.png"
 const Navbar = () => {
 
-  const route = window.location.pathname;
+  const pages = [
+    {
+      pageName: "About",
+      pageRoute: "/about"
+    },
+    {
+      pageName: "Our Work",
+      pageRoute: "/work"
+    },
+    {
+      pageName: "Meet The Team",
+      pageRoute: "/team"
+    }
+  ]
 
   return (
-    <Nav className="navbar navbar-expand-lg navbar-dark main-bg-color">
+    <div className="navbar sticky-top navbar-expand-lg navbar-dark main-bg-color p-1">
       <div className="container-fluid">
-        <a className="navbar-brand" href="/">
-          RSVA
+        <a href="/">
+        <img src={logo} class="rsva-logo" alt="rsva logo"/>
         </a>
         <button
           className="navbar-toggler"
@@ -24,21 +36,11 @@ const Navbar = () => {
         </button>
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-            <li className="nav-item">
-              <a className={route === '/about' ? "nav-link active route-active" : "nav-link nav-over"} aria-current="page" href="/about">
-                About
-              </a>
-            </li>
-            <li className="nav-item">
-              <a className={route === '/work' ? "nav-link active route-active" : "nav-link nav-over"} href="/work">
-                Our Work
-              </a>
-            </li>
-            <li className="nav-item">
-              <a className={route === '/team' ? "nav-link active route-active" : "nav-link nav-over"} href="/team">
-                Meet The Team
-              </a>
-            </li>
+
+            {pages.map(page => {
+              return <Link pageRoute={page.pageRoute} pageName={page.pageName}/>
+            })}
+
             <li className="nav-item dropdown">
               <a
                 className="nav-link nav-over dropdown-toggle"
@@ -48,24 +50,24 @@ const Navbar = () => {
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
               >
-                Other
+                Services
               </a>
               <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
                 <li>
-                  <a className="dropdown-item" href="/na">
-                    Action
+                  <a className="dropdown-item" href="/water">
+                    Water
                   </a>
                 </li>
                 <li>
-                  <a className="dropdown-item" href="/na">
-                    Another action
+                  <a className="dropdown-item" href="/fire">
+                    Fire
                   </a>
                 </li>
                 <li>
                 </li>
                 <li>
-                  <a className="dropdown-item" href="/na">
-                    Something else here
+                  <a className="dropdown-item" href="/mold">
+                    Mold
                   </a>
                 </li>
               </ul>
@@ -73,7 +75,7 @@ const Navbar = () => {
           </ul>
         </div>
       </div>
-    </Nav>
+    </div>
   )
 }
 

@@ -1,8 +1,11 @@
-import React from "react";
-
+import hero from "../../images/hero.png"
 const Home = () => {
   return (
-    <div className="py-5">Home page</div>
+    <div>
+        <img className="hero" src={hero} alt="hero"/>
+
+
+    </div>
   );
 };
 

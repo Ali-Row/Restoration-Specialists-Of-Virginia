@@ -1,27 +1,51 @@
 /* color vars */
 :root {
-    --main-bg-color: rgb(18, 90, 179);
-    --main-hover-color: rgb(43, 107, 185);
+    --main-bg-color: rgba(12, 65, 121, 0.990);
+    --main-bg-color-dark: rgb(9, 50, 95);
+    --main-hover-color: rgb(27, 75, 133);
+    --main-font: 'Poppins', sans-serif;
 }
-
+* {
+    font-family: var(--main-font);
+}
 .main-bg-color {
     background: var(--main-bg-color);
 }
 
+.rsva-logo {
+    max-width: 2.5rem;
+}
 .nav-item {
     margin-left: 1rem;
 }
-
 .nav-link, .nav-over, .navbar-brand {
     border-bottom: solid rgba(255, 255, 255, 0) .2rem;
     border-radius: .3rem !important;
+    padding: .65rem;
 }
-
 .nav-over:hover {
     background: var(--main-hover-color);
+    color: white !important;
 }
-
 .route-active {
     border-bottom: solid white .2rem;
     border-radius: 0rem !important;
+}
+.navbar-toggler {
+    border: none;
+    padding: .55rem;
+}
+
+.hero {
+    max-width: 100%;
+}
+
+
+
+.footer-logo {
+    max-width: 10vw
+}
+.footer-bottom {
+    background: var(--main-bg-color-dark);
+    padding: 8rem;
 }
