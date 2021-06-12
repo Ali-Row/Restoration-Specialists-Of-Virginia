@@ -1,6 +1,5 @@
 import React from "react";
 import Nav from "react-bootstrap/Nav";
-import Container from "react-bootstrap/Container"
 
 const Navbar = () => {
 
@@ -26,25 +25,30 @@ const Navbar = () => {
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav me-auto mb-2 mb-lg-0">
             <li className="nav-item">
-              <a className={route === '/about' ? "nav-link active route-active" : "nav-link active"} aria-current="page" href="/about">
+              <a className={route === '/about' ? "nav-link active route-active" : "nav-link nav-over"} aria-current="page" href="/about">
                 About
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="/na">
+              <a className={route === '/work' ? "nav-link active route-active" : "nav-link nav-over"} href="/work">
                 Our Work
+              </a>
+            </li>
+            <li className="nav-item">
+              <a className={route === '/team' ? "nav-link active route-active" : "nav-link nav-over"} href="/team">
+                Meet The Team
               </a>
             </li>
             <li className="nav-item dropdown">
               <a
-                className="nav-link dropdown-toggle"
+                className="nav-link nav-over dropdown-toggle"
                 href="/na"
                 id="navbarDropdown"
                 role="button"
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
               >
-                Dropdown
+                Other
               </a>
               <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
                 <li>
@@ -58,7 +62,6 @@ const Navbar = () => {
                   </a>
                 </li>
                 <li>
-                  <hr className="dropdown-divider"></hr>
                 </li>
                 <li>
                   <a className="dropdown-item" href="/na">

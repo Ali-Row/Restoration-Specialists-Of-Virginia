@@ -1,12 +1,27 @@
 /* color vars */
 :root {
     --main-bg-color: rgb(18, 90, 179);
+    --main-hover-color: rgb(43, 107, 185);
 }
 
 .main-bg-color {
     background: var(--main-bg-color);
 }
 
+.nav-item {
+    margin-left: 1rem;
+}
+
+.nav-link, .nav-over, .navbar-brand {
+    border-bottom: solid rgba(255, 255, 255, 0) .2rem;
+    border-radius: .3rem !important;
+}
+
+.nav-over:hover {
+    background: var(--main-hover-color);
+}
+
 .route-active {
     border-bottom: solid white .2rem;
+    border-radius: 0rem !important;
 }
