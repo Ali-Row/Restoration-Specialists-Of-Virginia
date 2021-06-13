@@ -1,5 +1,8 @@
+import { useState } from "react";
 import logo from "../../images/rsva-logo.png"
 const Navbar = ({ children }) => {
+
+  const [isOpen, setIsOpen] = useState(false);
 
   return (
     <div className="navbar sticky-top navbar-expand-lg navbar-dark main-bg-color p-1">
@@ -15,8 +18,9 @@ const Navbar = ({ children }) => {
           aria-controls="navbarSupportedContent"
           aria-expanded="false"
           aria-label="Toggle navigation"
+          onClick={() => isOpen ? setIsOpen(false) : setIsOpen(true)}
         >
-          <i class="fas fa-bars"></i>
+          {isOpen ? <i class="fas fa-times"></i> : <i class="fas fa-bars"></i>} 
         </button>
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav me-auto mb-2 mb-lg-0">
