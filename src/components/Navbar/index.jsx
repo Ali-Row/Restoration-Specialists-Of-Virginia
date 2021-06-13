@@ -1,27 +1,11 @@
-import Link from "../Link";
 import logo from "../../images/rsva-logo.png"
-const Navbar = () => {
-
-  const pages = [
-    {
-      pageName: "About",
-      pageRoute: process.env.PUBLIC_URL + "/#/about"
-    },
-    {
-      pageName: "Our Work",
-      pageRoute: process.env.PUBLIC_URL + "/#/work"
-    },
-    {
-      pageName: "Meet The Team",
-      pageRoute: process.env.PUBLIC_URL + "/#/team"
-    }
-  ]
+const Navbar = ({ children }) => {
 
   return (
     <div className="navbar sticky-top navbar-expand-lg navbar-dark main-bg-color p-1">
       <div className="container-fluid">
-        <a href={process.env.PUBLIC_URL + "/#/"}>
-        <img src={logo} class="rsva-logo" alt="rsva logo"/>
+        <a className="logo-wrapper" href={process.env.PUBLIC_URL + "/#/"}>
+        <img src={logo} className="rsva-logo" alt="rsva logo"/>
         </a>
         <button
           className="navbar-toggler"
@@ -32,15 +16,11 @@ const Navbar = () => {
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-          <span className="navbar-toggler-icon"></span>
+          <i class="fas fa-bars"></i>
         </button>
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-
-            {pages.map(page => {
-              return <Link pageRoute={page.pageRoute} pageName={page.pageName}/>
-            })}
-
+            {children}
             <li className="nav-item dropdown">
               <a
                 className="nav-link nav-over dropdown-toggle"
