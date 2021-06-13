@@ -11,8 +11,8 @@ const App = () => {
     <>
       <Navbar />
         <Router basename={process.env.PUBLIC_URL}>
-          <Route exact path={process.env.PUBLIC_URL + "/"} component={Home} />
-          <Route exact path={process.env.PUBLIC_URL + "/about"} component={About} />  
+          <Route exact path="/" component={Home} />
+          <Route exact path="/about" component={About} />  
         </Router>
       <Footer />
     </>
