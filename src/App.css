@@ -36,23 +36,6 @@
 .hero {
     max-width: 100%;
 }
-@keyframes bounce {
-    from {
-        margin-top: -26rem;
-        opacity: 1;
-    }
-    to {
-        margin-top: -22rem;
-        opacity: 0.5;
-    }
-}
-.fa-angle-down {
-    color: rgb(142, 172, 216) !important;
-    position: absolute;
-    margin-top: -20rem;
-    font-size: 3.2rem;
-    animation: bounce ease-in-out infinite 1.5s;
-}
 .footer-logo {
     max-width: 10vw
 }
