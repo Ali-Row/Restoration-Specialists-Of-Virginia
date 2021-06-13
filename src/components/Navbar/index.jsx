@@ -5,22 +5,22 @@ const Navbar = () => {
   const pages = [
     {
       pageName: "About",
-      pageRoute: process.env.PUBLIC_URL + "/about"
+      pageRoute: "/about"
     },
     {
       pageName: "Our Work",
-      pageRoute: process.env.PUBLIC_URL + "/work"
+      pageRoute: "/work"
     },
     {
       pageName: "Meet The Team",
-      pageRoute: process.env.PUBLIC_URL + "/team"
+      pageRoute: "/team"
     }
   ]
 
   return (
     <div className="navbar sticky-top navbar-expand-lg navbar-dark main-bg-color p-1">
       <div className="container-fluid">
-        <a href={process.env.PUBLIC_URL + "/"}>
+        <a href="/">
         <img src={logo} class="rsva-logo" alt="rsva logo"/>
         </a>
         <button
