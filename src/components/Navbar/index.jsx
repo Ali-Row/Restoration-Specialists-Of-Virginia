@@ -1,5 +1,7 @@
 import { useState } from "react";
-import logo from "../../images/rsva-logo.png"
+import logo from "../../images/navbar-logo.png"
+import hamburgerIcon from "../../images/hamburger-icon.png";
+import xIcon from "../../images/x-icon.png";
 const Navbar = ({ children }) => {
 
   const [isOpen, setIsOpen] = useState(false);
@@ -8,7 +10,7 @@ const Navbar = ({ children }) => {
     <div className="navbar sticky-top navbar-expand-lg navbar-dark main-bg-color p-1">
       <div className="container-fluid">
         <a className="logo-wrapper" href={process.env.PUBLIC_URL + "/#/"}>
-        <img src={logo} className="rsva-logo" alt="rsva logo"/>
+        <img src={logo} className="navbar-logo" alt="rsva logo"/>
         </a>
         <button
           className="navbar-toggler"
@@ -20,7 +22,7 @@ const Navbar = ({ children }) => {
           aria-label="Toggle navigation"
           onClick={() => isOpen ? setIsOpen(false) : setIsOpen(true)}
         >
-          {isOpen ? <i class="fas fa-times"></i> : <i class="fas fa-bars"></i>} 
+          {isOpen ? <img className="nav-icons" src={xIcon} alt="Close button"></img> : <img className="nav-icons" src={hamburgerIcon} alt="Hamburger menu"></img>} 
         </button>
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav me-auto mb-2 mb-lg-0">

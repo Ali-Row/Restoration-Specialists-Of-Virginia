@@ -11,8 +11,8 @@
 .main-bg-color {
     background: var(--main-bg-color);
 }
-.rsva-logo {
-    max-width: 2.5rem;
+.navbar-logo {
+    max-width: 5rem;
 }
 .nav-link, .nav-over, .navbar-brand {
     border-bottom: solid rgba(255, 255, 255, 0) .2rem;
@@ -32,6 +32,9 @@
 .navbar-toggler {
     border: none;
     padding: .55rem;
+}
+.nav-icons {
+    max-width: 2rem;
 }
 .hero {
     max-width: 100%;

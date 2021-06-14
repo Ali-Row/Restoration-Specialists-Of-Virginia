@@ -22,7 +22,6 @@ const App = () => {
           </li>
           <li>
             <NavLink
-              // exact={true}
               activeClassName="active route-active"
               className="nav-link nav-over"
               to="/work"
@@ -32,12 +31,29 @@ const App = () => {
           </li>
           <li>
             <NavLink
-              // exact={true}
               activeClassName="active route-active"
               className="nav-link nav-over"
               to="/team"
             >
               Meet The Team
+            </NavLink>
+          </li>
+          <li>
+            <NavLink
+              activeClassName="active route-active"
+              className="nav-link nav-over"
+              to="/testimonials"
+            >
+              Testimonials
+            </NavLink>
+          </li>
+          <li>
+            <NavLink
+              activeClassName="active route-active"
+              className="nav-link nav-over"
+              to="/contact"
+            >
+              Contact
             </NavLink>
           </li>
         </Navbar>
