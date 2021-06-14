@@ -22,7 +22,7 @@ const Navbar = ({ children }) => {
           aria-label="Toggle navigation"
           onClick={() => isOpen ? setIsOpen(false) : setIsOpen(true)}
         >
-          {isOpen ? <img className="nav-icons" src={xIcon} alt="Close button"></img> : <img className="nav-icons" src={hamburgerIcon} alt="Hamburger menu"></img>} 
+          {isOpen ? <img className="nav-icons animate__animated animate__fadeIn animate__fast" src={xIcon} alt="Close button"></img> : <img className="nav-icons" src={hamburgerIcon} alt="Hamburger menu"></img>} 
         </button>
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav me-auto mb-2 mb-lg-0">
