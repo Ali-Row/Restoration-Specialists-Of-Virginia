@@ -40,19 +40,19 @@ const Navbar = ({ children }) => {
               </a>
               <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
                 <li>
-                  <a className="dropdown-item" href="/water">
+                  <a className="dropdown-item" href={process.env.PUBLIC_URL + "/#/water"}>
                     Water
                   </a>
                 </li>
                 <li>
-                  <a className="dropdown-item" href="/fire">
+                  <a className="dropdown-item" href={process.env.PUBLIC_URL + "/#/fire"}>
                     Fire
                   </a>
                 </li>
                 <li>
                 </li>
                 <li>
-                  <a className="dropdown-item" href="/mold">
+                  <a className="dropdown-item" href={process.env.PUBLIC_URL + "/#/mold"}>
                     Mold
                   </a>
                 </li>

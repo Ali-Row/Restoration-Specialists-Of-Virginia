@@ -7,7 +7,6 @@
 }
 * {
     font-family: var(--main-font);
-    overflow-x: hidden !important;
 }
 .main-bg-color {
     background: var(--main-bg-color);
@@ -19,10 +18,13 @@
     border-bottom: solid rgba(255, 255, 255, 0) .2rem;
     border-radius: .3rem !important;
     padding: .65rem;
-    margin-left: 1.2rem;
+    margin-left: .5rem;
+}
+.nav-over {
+    transition: background-color .05s ease-in-out;
 }
 .nav-over:hover {
-    background: var(--main-hover-color);
+    background-color: var(--main-hover-color);
     color: white !important;
 }
 .route-active {
@@ -45,6 +47,10 @@
 }
 .home-imgs {
     max-width: 100% !important;
+    overflow-x: hidden;
+}
+.home-imgs > div > img {
+    border: solid var(--main-bg-color) .2vw;
 }
 .footer-logo {
     max-width: 10vw
