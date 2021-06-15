@@ -4,6 +4,7 @@ import { HashRouter as Router, Route, Switch, NavLink } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
 import About from "./pages/About";
+import MeetTheTeam from "./pages/MeetTheTeam";
 import Footer from "./components/Footer";
 
 const App = () => {
@@ -49,6 +50,8 @@ const App = () => {
         <Switch>
           <Route exact path="/" component={Home} />
           <Route path="/about" component={About} />
+          <Route path="/team" component={MeetTheTeam} />
+
         </Switch>
       </Router>
       <Footer />
