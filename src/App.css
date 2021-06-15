@@ -50,10 +50,6 @@
     max-width: 100% !important;
     overflow-x: hidden;
 }
-.home-imgs > div > img {
-    border: solid var(--main-team-color) .2vw;
-    background-color: var(--main-team-color);
-}
 .footer-logo {
     max-width: 10vw
 }

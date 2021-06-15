@@ -2,8 +2,11 @@
     width: 100%;
 }
 .card-wrapper {
-    background-color: rgb(32, 96, 175) !important;
-}
+    background-image: url('https://images.unsplash.com/photo-1557683316-973673baf926?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8M3x8fGVufDB8fHx8&w=1000&q=80') !important;
+    background-attachment: fixed;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+} 
 .meet-the-team-hero > h1 {
     position: absolute;
     color: white;
@@ -11,7 +14,7 @@
     font-size: 7em;
     z-index: 1;
 }
-.meet-the-team-hero > img {
+.team-img-banner {
     filter: brightness(50%);
 }
 

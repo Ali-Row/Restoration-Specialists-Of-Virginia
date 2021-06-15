@@ -67,9 +67,10 @@ const MeetTheTeam = () => {
   return (
     <main>
       <div className="meet-the-team-hero">
-        <h1>Meet The Team</h1>
+        <h1 className="animate__animated animate__fadeInDown animate__faster">Meet The Team At RSVA</h1>
         <img className="team-img-banner" src={teamImg} alt="The RSVA team" />
       </div>
+
       <section className="card-wrapper pb-5">
         <div className="container">
           <div className="row">
