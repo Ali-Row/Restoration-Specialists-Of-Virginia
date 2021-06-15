@@ -11,6 +11,7 @@ const TeamMemberCard = ({ img, name, role, desc, alt }) => {
                         </div>
                         <div className="text-container">
                             <h6 className="name">{name}</h6>
+                            <hr />
                             <h6 className="role">{role}</h6>
                             <p>{desc}</p>
                         </div>

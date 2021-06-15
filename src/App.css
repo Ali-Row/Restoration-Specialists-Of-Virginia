@@ -3,6 +3,7 @@
     --main-bg-color: rgba(12, 65, 121, 0.990);
     --main-bg-color-dark: rgb(9, 50, 95);
     --main-hover-color: rgb(27, 75, 133);
+    --main-team-color: rgb(32,97,175);
     --main-font: 'Poppins', sans-serif;
 }
 * {
@@ -50,7 +51,8 @@
     overflow-x: hidden;
 }
 .home-imgs > div > img {
-    border: solid var(--main-bg-color) .2vw;
+    border: solid var(--main-team-color) .2vw;
+    background-color: var(--main-team-color);
 }
 .footer-logo {
     max-width: 10vw

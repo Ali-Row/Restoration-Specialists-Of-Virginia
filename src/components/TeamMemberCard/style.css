@@ -11,13 +11,14 @@
   outline: none;
 }
 .card-wrapper .card-flyer {
-  border-radius: 5px;
+  border-radius: 1.1rem;
 }
 .card-wrapper .card-flyer .image-box {
   background: #ffffff;
   overflow: hidden;
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.5);
-  border-radius: 5px;
+  border-top-left-radius: 1.1rem;
+  border-top-right-radius: 1.1rem;
 }
 .card-wrapper .card-flyer .image-box img {
   -webkit-transition: all 0.6s ease;
@@ -80,10 +81,11 @@
 }
 .card-flyer {
   height: 600px;
+  border-radius: 1.1rem !important;
   /* background-color: rgb(63, 70, 80) !important; */
 }
 .name {
-  font-size: 1.2rem !important;
+  font-size: 1.3rem !important;
 }
 .role {
   font-size: .8rem !important;
