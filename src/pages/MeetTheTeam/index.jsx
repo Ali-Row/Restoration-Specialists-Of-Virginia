@@ -6,7 +6,6 @@ import jasonAfsharieImg from "./TeamImages/jason-afsharie.png";
 import dakotaStanleyImg from "./TeamImages/dakota-stanley.png";
 import alistairRowdenImg from "./TeamImages/alistair-rowden.png";
 
-
 const MeetTheTeam = () => {
   const team = [
     {
@@ -28,11 +27,11 @@ const MeetTheTeam = () => {
       desc: "Lorem, ipsum dolor obcaecati dolor rem aliquam beatae dolorem delectus obcaecati dolor rem aliquam beatae dolorem delectus",
     },
     {
-        img: alistairRowdenImg,
-        name: "Alistair Rowden",
-        role: "Software Developer",
-        desc: "Lorem, ipsum dolor obcaecati dolor rem aliquam beatae dolorem delectus obcaecati dolor rem aliquam beatae dolorem delectus",
-      },
+      img: alistairRowdenImg,
+      name: "Alistair Rowden",
+      role: "Software Developer",
+      desc: "Lorem, ipsum dolor obcaecati dolor rem aliquam beatae dolorem delectus obcaecati dolor rem aliquam beatae dolorem delectus",
+    },
   ];
 
   return (

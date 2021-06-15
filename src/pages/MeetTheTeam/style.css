@@ -5,5 +5,28 @@
     background-color: rgb(32, 96, 175) !important;
 }
 .meet-the-team-hero > h1 {
-    
+    position: absolute;
+    color: white;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 7em;
+    z-index: 1;
+}
+.meet-the-team-hero > img {
+    filter: brightness(50%);
+}
+
+@media screen and (max-width: 1024px){
+    .meet-the-team-hero > h1 {
+        font-size: 6em;
+    }  
+}
+@media screen and (max-width: 800px){
+    .meet-the-team-hero > h1 {
+        font-size: 5em;
+    }  
+}
+@media screen and (max-width: 700px){
+    .meet-the-team-hero > h1 {
+        font-size: 4em;
+    }  
 }
