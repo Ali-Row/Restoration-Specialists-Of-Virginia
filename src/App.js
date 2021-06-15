@@ -7,55 +7,44 @@ import About from "./pages/About";
 import Footer from "./components/Footer";
 
 const App = () => {
+
+  const pages = [
+    {
+      pageName: "About",
+      pageRoute: "/about"
+    },
+    {
+      pageName: "Our Work",
+      pageRoute: "/work"
+    },
+    {
+      pageName: "Meet The Team",
+      pageRoute: "/team"
+    },
+    {
+      pageName: "Testimonials",
+      pageRoute: "/testimonials"
+    },
+    {
+      pageName: "Contact",
+      pageRoute: "/contact"
+    },
+  ]
+
   return (
     <>
       <Router>
         <Navbar>
-          <li className="top-nav-link">
-            <NavLink
-              activeClassName="active route-active"
-              className="nav-link nav-over"
-              to="/about"
-            >
-              About
-            </NavLink>
-          </li>
-          <li>
-            <NavLink
-              activeClassName="active route-active"
-              className="nav-link nav-over"
-              to="/work"
-            >
-              Our Work
-            </NavLink>
-          </li>
-          <li>
-            <NavLink
-              activeClassName="active route-active"
-              className="nav-link nav-over"
-              to="/team"
-            >
-              Meet The Team
-            </NavLink>
-          </li>
-          <li>
-            <NavLink
-              activeClassName="active route-active"
-              className="nav-link nav-over"
-              to="/testimonials"
-            >
-              Testimonials
-            </NavLink>
-          </li>
-          <li>
-            <NavLink
-              activeClassName="active route-active"
-              className="nav-link nav-over"
-              to="/contact"
-            >
-              Contact
-            </NavLink>
-          </li>
+          {pages.map(page => {
+            return <li>
+                <NavLink
+                  activeClassName="active route-active"
+                  className="nav-link nav-over"
+                  to={page.pageRoute}>
+                  {page.pageName}
+                </NavLink>
+              </li>
+          })}
         </Navbar>
         <Switch>
           <Route exact path="/" component={Home} />
