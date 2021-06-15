@@ -1,6 +1,6 @@
 import "./style.css";
 import TeamMemberCard from "../../components/TeamMemberCard";
-import teamImg from "./TeamImages/team.jpeg";
+import teamImg from "./TeamImages/team.png";
 import justinLancasterImg from "./TeamImages/justin-lancaster.png";
 import jasonAfsharieImg from "./TeamImages/jason-afsharie.png";
 import dakotaStanleyImg from "./TeamImages/dakota-stanley.png";
@@ -65,7 +65,7 @@ const MeetTheTeam = () => {
     },
   ];
   return (
-    <main>
+    <main className="team-container">
       <div className="meet-the-team-hero">
         <h1 className="animate__animated animate__fadeInDown animate__faster">Meet The Team At RSVA</h1>
         <img className="team-img-banner" src={teamImg} alt="The RSVA team" />

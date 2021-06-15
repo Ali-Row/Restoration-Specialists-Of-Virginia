@@ -18,7 +18,7 @@ const LazyLoadImage = React.memo(({ className, src, placeholder, alt = "" }) => 
       className={className}
       src={currentSrc}
       style={{
-        opacity: loading ? 0.2 : 1,
+        opacity: loading ? 0.5 : 1,
         transition: "opacity .15s linear"
       }}
       alt={alt}
