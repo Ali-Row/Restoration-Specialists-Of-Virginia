@@ -28,7 +28,7 @@
   width: 100%;
 }
 .card-wrapper .card-flyer:hover .image-box img {
-  opacity: 0.7;
+  filter: brightness(90%);
   -webkit-transform: scale(1.15);
   -moz-transform: scale(1.15);
   -ms-transform: scale(1.15);
@@ -67,6 +67,7 @@
   padding-bottom: 0px;
   font-size: 14px;
   letter-spacing: 1px;
+  font-family: Arial, Helvetica, sans-serif;
   color: #000000;
 }
 .card-wrapper .card-flyer .text-box h6 {
@@ -75,14 +76,13 @@
   font-size: 18px;
   font-weight: bold;
   text-transform: uppercase;
-  font-family: "Roboto Black", sans-serif;
+  font-family: 'Poppins', sans-serif;
   letter-spacing: 1px;
   color: var(--card-main-color);
 }
 .card-flyer {
   height: 600px;
   border-radius: 1.1rem !important;
-  /* background-color: rgb(63, 70, 80) !important; */
 }
 .name {
   font-size: 1.3rem !important;
@@ -100,14 +100,6 @@
   .card-flyer {
     height: 800px;
   } 
-  .card-wrapper .card-flyer:hover .image-box img {
-    opacity: 1;
-    -webkit-transform: scale(1.15);
-    -moz-transform: scale(1.15);
-    -ms-transform: scale(1.15);
-    -o-transform: scale(1.15);
-    transform: scale(1.15);
-  }
 }
 @media screen and (max-width: 520px){
   .card-flyer {

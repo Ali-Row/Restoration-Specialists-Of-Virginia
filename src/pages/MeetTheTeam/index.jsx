@@ -31,7 +31,7 @@ const MeetTheTeam = () => {
       img: justinLancasterImg,
       name: "Justin Lancaster",
       role: "President",
-      desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum dolorum ea eaque excepturi, quo quas libero porro cumque? Quae recusandae obcaecati dolor rem aliquam beatae",
+      desc: "Justin is the founder of RSVA, lorem psum dolor obcaecati dolor rem aliquam beatae dolorem delectus obcaecati dolor rem aliquam beatae "
     },
     {
       img: jasonAfsharieImg,
