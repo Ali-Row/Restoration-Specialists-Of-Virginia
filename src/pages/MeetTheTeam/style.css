@@ -1,8 +1,9 @@
 .team-img-banner {
     width: 100%;
 }
-.team-container {
-    background: rgb(247,247,247) !important;
+.team-container, .card-wrapper {
+    background: rgb(255,160,0) !important;
+    background: linear-gradient(0deg, rgb(14,67,122)  17%, rgb(28, 94, 165) 88%) !important;
 }
 .meet-the-team-hero > h1 {
     position: absolute;

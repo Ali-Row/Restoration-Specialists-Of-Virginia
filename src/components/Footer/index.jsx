@@ -8,7 +8,9 @@ const Footer = () => {
             <img className="footer-logo" src={logo} alt="rsva logo"/>
         </div>
     </footer>
-    <div className="footer-bottom"></div>  
+    <div className="footer-bottom text-light text-center">
+    Copyright © {new Date().getFullYear()} Restoration Specialists of Virginia. All rights reserved. Website built by <a className="text-light" href="https://www.github.com/ali-row">Alistair Rowden</a>
+    </div>  
     </>
   );
 };
