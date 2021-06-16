@@ -8,6 +8,7 @@
     position: absolute;
     color: white;
     font-size: 7em;
+    font-family: 'Poppins', sans-serif !important;
     z-index: 1;
 }
 

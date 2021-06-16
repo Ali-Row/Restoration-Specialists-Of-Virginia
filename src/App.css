@@ -4,7 +4,8 @@
     --main-bg-color-dark: rgb(9, 50, 95);
     --main-hover-color: rgb(27, 75, 133);
     --main-team-color: rgb(32,97,175);
-    --main-font: 'Poppins', sans-serif;
+    --main-font: 'Noto Sans JP', sans-serif;
+
 }
 * {
     font-family: var(--main-font);

@@ -76,7 +76,7 @@ const MeetTheTeam = () => {
           <div className="row">
             {team.map(({ img, name, role, desc }) => {
               return (
-                <div className="col-md-4">
+                <div className="col-lg-4 col-md-6">
                   <TeamMemberCard
                     img={img}
                     name={name}
