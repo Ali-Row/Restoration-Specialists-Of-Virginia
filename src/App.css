@@ -52,11 +52,27 @@
     overflow-x: hidden;
 }
 .footer-logo {
-    max-width: 10vw
+    max-width: 20rem
+}
+.fb-logo { 
+    max-width: 8rem;
+}
+.yelp-logo { 
+    max-width: 4.3rem;
+}
+.google-logo { 
+    max-width: 4.7rem;
 }
 .footer-bottom {
     background: var(--main-bg-color-dark);
     padding: 2rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.zoom {
+    transition: all ease-in-out .15s;
+}
+.zoom:hover {
+    transform: scale(1.15);
 }
 
 
